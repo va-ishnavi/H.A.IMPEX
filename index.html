@@ -367,13 +367,13 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
 
       <div class="max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-xl">
         <form>
-          <input type="text" placeholder="Your Name" class="w-full border p-3 mb-4 rounded" />
+          <input type="text" name="name" placeholder="Your Name" required class="w-full border p-3 mb-4 rounded" />
 
-          <input type="email" placeholder="Your Email" class="w-full border p-3 mb-4 rounded" />
+          <input type="email" name="email" placeholder="Your Email" required class="w-full border p-3 mb-4 rounded" />
 
-          <input type="text" placeholder="Subject" class="w-full border p-3 mb-4 rounded" />
+          <input type="text" name="phone" placeholder="Phone Number" required class="w-full border p-3 mb-4 rounded" />
 
-          <textarea rows="5" placeholder="Your Message" class="w-full border p-3 mb-4 rounded"></textarea>
+          <textarea rows="5" name="message" placeholder="Your Message" required class="w-full border p-3 mb-4 rounded"></textarea>
 
           <button type="submit" class="bg-red-700 text-white px-8 py-3 rounded hover:bg-red-800">
             Send Inquiry
