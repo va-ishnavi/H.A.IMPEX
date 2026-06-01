@@ -26,16 +26,37 @@
     <div class="container mx-auto px-6">
       <div class="flex justify-between items-center py-4">
         <div>
-          <h1 class="text-2xl font-bold text-red-700">H.A. IMPEX</h1>
-          <p class="text-xs text-gray-500">Premium Spices Exporter</p>
+         <div class="logo">
+    🚢 H.A. <span>IMPEX</span>
+    <p>GLOBAL SPICE EXPORTER</p>
+</div>
+
+<style>
+.logo{
+    font-size:38px;
+    font-weight:800;
+    color:#111827;
+}
+
+.logo span{
+    color:#b91c1c;
+}
+
+.logo p{
+    font-size:10px;
+    letter-spacing:4px;
+    color:#666;
+    margin-top:5px;
+}
+</style>
         </div>
 
         <nav class="hidden md:flex space-x-8">
-          <a href="#home" class="hover:text-red-700">Home</a>
-          <a href="#about" class="hover:text-red-700">About</a>
-          <a href="#products" class="hover:text-red-700">Products</a>
-          <a href="#whyus" class="hover:text-red-700">Why Us</a>
-          <a href="#contact" class="hover:text-red-700">Contact</a>
+          <a href="index.html" class="hover:text-red-700">Home</a>
+          <a href="about.html" class="hover:text-red-700">About</a>
+          <a href="products.html" class="hover:text-red-700">Products</a>
+          <a href="whyus.html" class="hover:text-red-700">Why Us</a>
+          <a href="contact.html" class="hover:text-red-700">Contact</a>
         </nav>
 
         <button id="menu-btn" class="md:hidden text-3xl">☰</button>
@@ -52,36 +73,173 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero-bg text-white py-48">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-5xl md:text-6xl font-bold mb-6">
-        Global Exporter of Premium Indian Spices
-      </h1>
+  <!---->
+  <!-- Hero Slider Section -->
+<section class="hero-slider">
 
-      <p class="text-xl max-w-4xl mx-auto mb-8">
-        H.A. IMPEX is a trusted Import-Export company from Delhi, India,
-        specializing in high-quality whole, crushed and ground spices for
-        international markets.
-      </p>
+    <!-- Slide 1 -->
+    <div class="slide active">
+        <img src="images/slide1.jpg" alt="Indian Spices">
 
-      <div class="flex flex-wrap justify-center gap-6 text-lg mb-8">
-        <div>✓ Premium Quality Spices</div>
+        <div class="content">
+            <h1>Premium Indian Spices Exporter</h1>
 
-        <div>✓ Global Export Network</div>
+            <p>
+                H.A. IMPEX delivers premium-quality whole, crushed, and ground
+                spices from India to global markets with unmatched quality,
+                freshness, and reliability.
+            </p>
 
-        <div>✓ Competitive Pricing</div>
-
-        <div>✓ Timely Delivery</div>
-
-        <div>✓ Trusted International Supplier</div>
-      </div>
-
-      <a href="contact.html" class="bg-red-700 hover:bg-red-800 px-8 py-4 rounded-lg text-lg mr-4 font-semibold">
-        Send Inquiry
-      </a>
-      
+            <a href="#products">Explore Products</a>
+        </div>
     </div>
-  </section>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <img src="images/slide2.jpg" alt="Quality Spices">
+
+        <div class="content">
+            <h1>Quality Beyond Borders</h1>
+
+            <p>
+                We source directly from trusted growers and maintain
+                international food safety standards to ensure exceptional
+                flavor, aroma, and purity.
+            </p>
+
+            <a href="contact.html">Send Inquiry</a>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <img src="images/slide3.jpg" alt="Global Export">
+
+        <div class="content">
+            <h1>Trusted Global Spice Partner</h1>
+
+            <p>
+                Located in Delhi's famous Khari Baoli spice market,
+                H.A. IMPEX proudly serves importers, wholesalers, and
+                distributors worldwide.
+            </p>
+
+            <a href="about.html">Learn More</a>
+        </div>
+    </div>
+
+</section>
+
+<style>
+
+.hero-slider{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:opacity 1s ease-in-out;
+}
+
+.slide.active{
+    opacity:1;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.slide::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.60);
+}
+
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:#fff;
+    width:90%;
+    max-width:900px;
+    z-index:2;
+}
+
+.content h1{
+    font-size:60px;
+    font-weight:700;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.content p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.content a{
+    display:inline-block;
+    background:#b91c1c;
+    color:#fff;
+    padding:14px 35px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.content a:hover{
+    background:#991b1b;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    .hero-slider{
+        height:80vh;
+    }
+
+    .content h1{
+        font-size:36px;
+    }
+
+    .content p{
+        font-size:16px;
+    }
+
+}
+
+</style>
+
+<script>
+
+const slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
+
+function nextSlide(){
+
+    slides[currentSlide].classList.remove("active");
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.add("active");
+
+}
+
+setInterval(nextSlide, 5000);
+
+</script>
 
 
   <!-- About Section -->
@@ -225,109 +383,111 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
 
       </div>
   </section>
-  
+
   <!-- Why Choose Us Section -->
 
-<section id="why-us" class="py-20 bg-red-700 text-white">
+  <section id="why-us" class="py-20 bg-red-700 text-white">
 
     <div class="container mx-auto px-6">
 
-        <!-- Section Heading -->
-        <div class="text-center mb-12">
+      <!-- Section Heading -->
+      <div class="text-center mb-12">
 
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">
-                Why Choose H.A. IMPEX?
-            </h2>
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          Why Choose H.A. IMPEX?
+        </h2>
 
-            <p class="max-w-4xl mx-auto text-lg leading-8 text-red-100">
-                At H.A. IMPEX, we are committed to delivering premium-quality
-                Indian spices to customers worldwide. Our focus on quality,
-                reliability, and customer satisfaction has made us a trusted
-                partner for importers, wholesalers, distributors, and food
-                manufacturers across global markets.
-            </p>
+        <p class="max-w-4xl mx-auto text-lg leading-8 text-red-100">
+          At H.A. IMPEX, we are committed to delivering premium-quality
+          Indian spices to customers worldwide. Our focus on quality,
+          reliability, and customer satisfaction has made us a trusted
+          partner for importers, wholesalers, distributors, and food
+          manufacturers across global markets.
+        </p>
 
+      </div>
+
+      <!-- Features -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="text-4xl mb-4">🌿</div>
+          <h3 class="text-xl font-bold mb-3">
+            Premium Quality Products
+          </h3>
+          <p>
+            We source our spices from trusted growers to ensure
+            exceptional freshness, purity, aroma, and authentic taste.
+          </p>
         </div>
 
-        <!-- Features -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-            <!-- Card 1 -->
-            <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">🌿</div>
-                <h3 class="text-xl font-bold mb-3">
-                    Premium Quality Products
-                </h3>
-                <p>
-                    We source our spices from trusted growers to ensure
-                    exceptional freshness, purity, aroma, and authentic taste.
-                </p>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">🌍</div>
-                <h3 class="text-xl font-bold mb-3">
-                    Global Export Network
-                </h3>
-                <p>
-                    We supply premium Indian spices to international markets
-                    with reliable logistics and professional export services.
-                </p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">🏆</div>
-                <h3 class="text-xl font-bold mb-3">
-                    International Standards
-                </h3>
-                <p>
-                    All products are processed and packed according to
-                    international food safety and quality requirements.
-                </p>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">🚚</div>
-                <h3 class="text-xl font-bold mb-3">
-                    Timely Deliveries
-                </h3>
-                <p>
-                    Our efficient logistics network ensures secure and
-                    on-time deliveries to customers around the world.
-                </p>
-            </div>
-
+        <!-- Card 2 -->
+        <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="text-4xl mb-4">🌍</div>
+          <h3 class="text-xl font-bold mb-3">
+            Global Export Network
+          </h3>
+          <p>
+            We supply premium Indian spices to international markets
+            with reliable logistics and professional export services.
+          </p>
         </div>
 
-        <!-- Bottom Content -->
-        <div class="mt-16 text-center max-w-5xl mx-auto">
-
-            <p class="text-lg leading-8 text-red-100">
-                Located in Khari Baoli, Delhi—one of the world's largest spice
-                trading hubs—H.A. IMPEX benefits from strong sourcing networks,
-                competitive pricing, and transparent business practices. Under
-                the leadership of Mr. Hitesh Aggarwal (MBA in Business Management),
-                our dedicated team works tirelessly to build long-term
-                relationships based on trust, consistency, and customer
-                satisfaction.
-            </p>
-
+        <!-- Card 3 -->
+        <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="text-4xl mb-4">🏆</div>
+          <h3 class="text-xl font-bold mb-3">
+            International Standards
+          </h3>
+          <p>
+            All products are processed and packed according to
+            international food safety and quality requirements.
+          </p>
         </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="text-4xl mb-4">🚚</div>
+          <h3 class="text-xl font-bold mb-3">
+            Timely Deliveries
+          </h3>
+          <p>
+            Our efficient logistics network ensures secure and
+            on-time deliveries to customers around the world.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Content -->
+      <div class="mt-16 text-center max-w-5xl mx-auto">
+
+        <p class="text-lg leading-8 text-red-100">
+          Located in Khari Baoli, Delhi—one of the world's largest spice
+          trading hubs—H.A. IMPEX benefits from strong sourcing networks,
+          competitive pricing, and transparent business practices. Under
+          the leadership of Mr. Hitesh Aggarwal (MBA in Business Management),
+          our dedicated team works tirelessly to build long-term
+          relationships based on trust, consistency, and customer
+          satisfaction.
+        </p>
+
+      </div>
 
     </div>
 
-</section>
+  </section>
 
 
   <!-- Company Information -->
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-red-700 mb-12">
+  <section class="relative py-20 bg-cover bg-center" style="background-image: url('images/info.jpg');">
+    <div class="absolute inset-0 bg-white/70"></div>
+
+    <div class="relative z-10 container mx-auto px-6">
+      <h1 class="text-4xl font-bold text-center text-red mb-12">
         Company Information
-      </h2>
+      </h1>
 
       <div class="grid md:grid-cols-2 gap-10">
         <div class="bg-white p-8 rounded-xl shadow">
@@ -357,10 +517,12 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-20 bg-gray-200">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-red-700 mb-12">
-           Get In Touch With Us
+  <section id="contact" class="relative py-20 bg-cover bg-center" style="background-image: url('images/form.jpg');">
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <div class="relative z-10 container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-white mb-12">
+        Get In Touch With Us
       </h2>
 
       <div class="max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-xl">
@@ -371,7 +533,8 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
 
           <input type="text" name="phone" placeholder="Phone Number" required class="w-full border p-3 mb-4 rounded" />
 
-          <textarea rows="5" name="message" placeholder="Your Message" required class="w-full border p-3 mb-4 rounded"></textarea>
+          <textarea rows="5" name="message" placeholder="Your Message" required
+            class="w-full border p-3 mb-4 rounded"></textarea>
 
           <button type="submit" class="bg-red-700 text-white px-8 py-3 rounded hover:bg-red-800">
             Send Inquiry
@@ -382,16 +545,104 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black text-white py-10">
-    <div class="container mx-auto px-6 text-center">
-      <h3 class="text-2xl font-bold mb-3">H.A. IMPEX</h3>
+  <!---->
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white border-t-4 border-red-600 pt-16 pb-8">
+    <div class="container mx-auto px-6">
 
-      <p>Premium Indian Spices Exporter & Importer</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-      <p class="mt-4 text-gray-400">
-        © 2026 H.A. IMPEX. All Rights Reserved.
-      </p>
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-2xl font-bold text-red-500 mb-4">
+            H.A. IMPEX
+          </h3>
+
+          <p class="text-gray-400 leading-7">
+            Trusted exporter and importer of premium Indian spices,
+            delivering quality, freshness, and authentic flavors to
+            global markets.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">
+            Quick Links
+          </h4>
+
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+            <li><a href="about.html" class="hover:text-red-500">About Us</a></li>
+            <li><a href="products.html" class="hover:text-red-500">Products</a></li>
+            <li><a href="contact.html" class="hover:text-red-500">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">
+            Our Products
+          </h4>
+
+          <ul class="space-y-2 text-gray-400">
+            <li>Whole Spices</li>
+            <li>Ground Spices</li>
+            <li>Crushed Spices</li>
+            <li>Spice Blends</li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">
+            Contact Info
+          </h4>
+
+          <div class="space-y-3 text-gray-400">
+
+            <p>
+              📍 49A, Coronation Building,<br>
+              Fatehpuri, Khari Baoli,<br>
+              Delhi - 110006, India
+            </p>
+
+            <p>
+              📧
+              <a href="mailto:hiteshaggarwal@haimpex.com" class="hover:text-red-500 transition">
+                hiteshaggarwal@haimpex.com
+              </a>
+            </p>
+
+            <p>
+              🌍 Worldwide Export Services
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer -->
+
+      <div class="border-t border-gray-700 mt-10 pt-6">
+
+        <div class="flex flex-col md:flex-row justify-between items-center">
+
+          <p class="text-gray-400 text-center md:text-left">
+            © 2026 H.A. IMPEX. All Rights Reserved.
+          </p>
+
+          <p class="text-gray-400 mt-3 md:mt-0">
+            Premium Indian Spices • Global Export Solutions
+          </p>
+
+        </div>
+
+      </div>
+
     </div>
+
   </footer>
 
   <script>
