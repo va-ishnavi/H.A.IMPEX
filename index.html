@@ -12,51 +12,52 @@
     .hero-bg {
       background:
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url("https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=1600&q=80");
+        url("images/bg.webp") no-repeat center center fixed;
       background-size: cover;
       background-position: center;
     }
   </style>
+
 </head>
 
 
 <body class="font-sans">
   <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
+  <header class=" bg-white backdrop-blur-md shadow-md sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <div class="flex justify-between items-center py-4">
         <div>
-         <div class="logo">
-    🚢 H.A. <span>IMPEX</span>
-    <p>GLOBAL SPICE EXPORTER</p>
-</div>
+          <div class="logo">
+            🚢 H.A. <span>IMPEX</span>
+            <p>GLOBAL SPICE EXPORTER</p>
+          </div>
 
-<style>
-.logo{
-    font-size:38px;
-    font-weight:800;
-    color:#111827;
-}
+          <style>
+            .logo {
+              font-size: 38px;
+              font-weight: 800;
+              color: #111827;
+            }
 
-.logo span{
-    color:#b91c1c;
-}
+            .logo span {
+              color: #8622dd;
+            }
 
-.logo p{
-    font-size:10px;
-    letter-spacing:4px;
-    color:#666;
-    margin-top:5px;
-}
-</style>
+            .logo p {
+              font-size: 10px;
+              letter-spacing: 4px;
+              color: #666;
+              margin-top: 5px;
+            }
+          </style>
         </div>
 
         <nav class="hidden md:flex space-x-8">
-          <a href="index.html" class="hover:text-red-700">Home</a>
-          <a href="about.html" class="hover:text-red-700">About</a>
-          <a href="products.html" class="hover:text-red-700">Products</a>
-          <a href="whyus.html" class="hover:text-red-700">Why Us</a>
-          <a href="contact.html" class="hover:text-red-700">Contact</a>
+          <a href="index.html" class="hover:text-purple-700">Home</a>
+          <a href="#about" class="hover:text-purple-700">About</a>
+          <a href="#products" class="hover:text-purple-700">Products</a>
+          <a href="#why-us" class="hover:text-purple-700">Why Us</a>
+          <a href="#contact" class="hover:text-purple-700">Contact</a>
         </nav>
 
         <button id="menu-btn" class="md:hidden text-3xl">☰</button>
@@ -66,7 +67,7 @@
         <a href="#home" class="block py-2">Home</a>
         <a href="#about" class="block py-2">About</a>
         <a href="#products" class="block py-2">Products</a>
-        <a href="#whyus" class="block py-2">Why Us</a>
+        <a href="#why-us" class="block py-2">Why Us</a>
         <a href="#contact" class="block py-2">Contact</a>
       </div>
     </div>
@@ -75,177 +76,176 @@
   <!-- Hero Section -->
   <!---->
   <!-- Hero Slider Section -->
-<section class="hero-slider">
+  <section class="hero-slider">
 
     <!-- Slide 1 -->
     <div class="slide active">
-        <img src="images/slide1.jpg" alt="Indian Spices">
+      <img src="images/slide1.jpg" alt="Indian Spices">
 
-        <div class="content">
-            <h1>Premium Indian Spices Exporter</h1>
+      <div class="content">
+        <h1>Premium Indian Spices Exporter</h1>
 
-            <p>
-                H.A. IMPEX delivers premium-quality whole, crushed, and ground
-                spices from India to global markets with unmatched quality,
-                freshness, and reliability.
-            </p>
+        <p>
+          H.A. IMPEX delivers premium-quality whole, crushed, and ground
+          spices from India to global markets with unmatched quality,
+          freshness, and reliability.
+        </p>
 
-            <a href="#products">Explore Products</a>
-        </div>
+        <a href="#products">Explore Products</a>
+      </div>
     </div>
 
     <!-- Slide 2 -->
     <div class="slide">
-        <img src="images/slide2.jpg" alt="Quality Spices">
+      <img src="images/slide2.jpg" alt="Quality Spices">
 
-        <div class="content">
-            <h1>Ground & Crushed Spices</h1>
+      <div class="content">
+        <h1>Ground & Crushed Spices</h1>
 
-            <p>
-                We offer premium-quality turmeric powder, chilli powder,
-            coriander powder, cumin powder, garam masala, and customized
-            spice blends processed according to international quality
-            standards.
+        <p>
+          We offer premium-quality turmeric powder, chilli powder,
+          coriander powder, cumin powder, garam masala, and customized
+          spice blends processed according to international quality
+          standards.
 
-            </p>
+        </p>
 
-            <a href="contact.html">Send Inquiry</a>
-        </div>
+        <a href="contact.html">Send Inquiry</a>
+      </div>
     </div>
 
     <!-- Slide 3 -->
     <div class="slide">
-        <img src="images/slide3.jpg" alt="Global Export">
+      <img src="images/slide3.jpg" alt="Global Export">
 
-        <div class="content">
-            <h1>Trusted Global Spice Partner</h1>
+      <div class="content">
+        <h1>Export Grade Rice & Spices</h1>
 
-            <p>
-                Located in Delhi's famous Khari Baoli spice market,
-                H.A. IMPEX proudly serves importers, wholesalers, and
-                distributors worldwide.
-            </p>
+        <p>
+          From premium Basmati Rice to authentic Indian spices,
+          our products are processed and packed according to
+          international quality standards.
+        </p>
 
-            <a href="about.html">Learn More</a>
-        </div>
+        <a href="about.html">Learn More</a>
+      </div>
     </div>
 
-</section>
+  </section>
 
-<style>
-
-.hero-slider{
-    position:relative;
-    height:100vh;
-    overflow:hidden;
-}
-
-.slide{
-    position:absolute;
-    width:100%;
-    height:100%;
-    opacity:0;
-    transition:opacity 1s ease-in-out;
-}
-
-.slide.active{
-    opacity:1;
-}
-
-.slide img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.slide::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.60);
-}
-
-.content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    text-align:center;
-    color:#fff;
-    width:90%;
-    max-width:900px;
-    z-index:2;
-}
-
-.content h1{
-    font-size:60px;
-    font-weight:700;
-    margin-bottom:20px;
-    line-height:1.2;
-}
-
-.content p{
-    font-size:20px;
-    line-height:1.8;
-    margin-bottom:30px;
-}
-
-.content a{
-    display:inline-block;
-    background:#b91c1c;
-    color:#fff;
-    padding:14px 35px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.content a:hover{
-    background:#991b1b;
-}
-
-/* Mobile Responsive */
-@media(max-width:768px){
-
-    .hero-slider{
-        height:80vh;
+  <style>
+    .hero-slider {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
     }
 
-    .content h1{
-        font-size:36px;
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
     }
 
-    .content p{
-        font-size:16px;
+    .slide.active {
+      opacity: 1;
     }
 
-}
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-</style>
+    .slide::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.60);
+    }
 
-<script>
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      width: 90%;
+      max-width: 900px;
+      z-index: 2;
+    }
 
-const slides = document.querySelectorAll(".slide");
-let currentSlide = 0;
+    .content h1 {
+      font-size: 60px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
 
-function nextSlide(){
+    .content p {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
 
-    slides[currentSlide].classList.remove("active");
+    .content a {
+      display: inline-block;
+      background: #7e22ce;
+      color: #fff;
+      padding: 14px 35px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
 
-    currentSlide = (currentSlide + 1) % slides.length;
+    .content a:hover {
+      background: #7e22ce;
+    }
 
-    slides[currentSlide].classList.add("active");
+    /* Mobile Responsive */
+    @media(max-width:768px) {
 
-}
+      .hero-slider {
+        height: 80vh;
+      }
 
-setInterval(nextSlide, 5000);
+      .content h1 {
+        font-size: 36px;
+      }
 
-</script>
+      .content p {
+        font-size: 16px;
+      }
+
+    }
+  </style>
+
+  <script>
+
+    const slides = document.querySelectorAll(".slide");
+    let currentSlide = 0;
+
+    function nextSlide() {
+
+      slides[currentSlide].classList.remove("active");
+
+      currentSlide = (currentSlide + 1) % slides.length;
+
+      slides[currentSlide].classList.add("active");
+
+    }
+
+    setInterval(nextSlide, 5000);
+
+  </script>
 
 
   <!-- About Section -->
-  <section id="about" class="py-20 bg-gray-50">
+  <section id="about" class="py-20 bg-gray-50"
+    style="background-image: url('images/bg.webp'); background-size: cover; background-position: center;">
 
     <div class="container mx-auto px-6">
 
@@ -254,11 +254,11 @@ setInterval(nextSlide, 5000);
         <!-- Left Content -->
         <div>
 
-          <span class="text-red-700 font-semibold uppercase tracking-widest">
+          <span class="text-purple-700 font-semibold uppercase tracking-widest">
             Who We Are
           </span>
 
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mt-4 mb-6">
             Trusted Exporter of Premium Indian Spices
           </h2>
 
@@ -286,7 +286,7 @@ setInterval(nextSlide, 5000);
           </p>
 
           <a href="about.html"
-            class="inline-block bg-red-700 hover:bg-red-800 text-white px-8 py-4 rounded-lg font-semibold transition duration-300">
+            class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-8 py-4 rounded-lg font-semibold transition duration-300">
             Read More
           </a>
 
@@ -309,13 +309,14 @@ setInterval(nextSlide, 5000);
   <!-- Products -->
   <!---->
 
-  <section class="py-20 bg-gray-50 shadow-lg border-t border-gray-200">
+  <section id="products" class="py-20 bg-gray-50 "
+    style="background-image: url('images/bg.webp'); background-size: cover; background-position: center;">
 
     <div class="container mx-auto px-6">
 
       <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold text-red-700 mb-4">
-          Our Products
+        <h2 class="text-5xl font-bold text-purple-700 mb-4">
+          Our Range Products
         </h2>
 
         <p class="text-gray-600 max-w-3xl mx-auto">
@@ -372,23 +373,184 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
               </p>
             </div>
           </div>
-
         </div>
 
       </div>
       <div class="text-center mt-12">
 
         <a href="products.html"
-          class="inline-flex items-center gap-2 bg-red-700 hover:bg-red-800 text-white px-10 py-4 rounded-full font-semibold shadow-lg transition duration-300">
+          class="inline-flex items-center gap-2 bg-purple-700 hover:bg-purple-800 text-white px-10 py-4 rounded-full font-semibold shadow-lg transition duration-300">
           Explore Our Products →
         </a>
 
       </div>
   </section>
 
+
+  <!-- Product Showcase Slider -->
+<section class="py-24 bg-gradient-to-br from-purple-100 via-violet-100 to-purple-100">
+
+    <div class="container mx-auto px-6">
+
+        <div class="text-center mb-14">
+            <h2 class="text-5xl font-bold text-purple-700 mb-4">
+                Our Product Gallery
+            </h2>
+
+            <p class="text-gray-600 max-w-3xl mx-auto text-lg">
+                Discover our premium collection of Indian Spices, Dry Fruits,
+                Pulses, and Rice carefully sourced and prepared for global markets.
+            </p>
+        </div>
+
+        <div class="product-slider">
+
+            <div class="slider-track">
+
+                <!-- Product 1 -->
+                <div class="product-slide">
+                    <img src="images/cashew.jpg" alt="Cashews">
+                    <div class="slide-content">
+                        <h3>Cashews</h3>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-slide">
+                    <img src="images/dates.jpg" alt="Dates">
+                    <div class="slide-content">
+                        <h3>Dates</h3>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-slide">
+                    <img src="images/almonds.jpg" alt="Almonds">
+                    <div class="slide-content">
+                        <h3>Almonds</h3>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-slide">
+                    <img src="images/walnuts.jpg" alt="Walnuts">
+                    <div class="slide-content">
+                        <h3>Walnuts</h3>
+                    </div>
+                </div>
+
+                <!-- Duplicate Slides -->
+                <div class="product-slide">
+                    <img src="images/rices1.jpg" alt="Rice">
+                    <div class="slide-content">
+                        <h3>Rice</h3>
+                    </div>
+                </div>
+
+                <div class="product-slide">
+                    <img src="images/rices2.jpg" alt="Rice">
+                    <div class="slide-content">
+                        <h3>Rice</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+.product-slider{
+    overflow:hidden;
+    position:relative;
+}
+
+.slider-track{
+    display:flex;
+    gap:30px;
+    width:max-content;
+    animation:productScroll 10s linear infinite;
+}
+
+.product-slide{
+    width:550px;
+    height:380px;
+    border-radius:25px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 15px 40px rgba(124,58,237,0.20);
+    flex-shrink:0;
+}
+
+.product-slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.product-slide:hover img{
+    transform:scale(1.08);
+}
+
+.slide-content{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:25px;
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,0.85)
+    );
+}
+
+.slide-content h3{
+    color:#fff;
+    font-size:32px;
+    font-weight:700;
+}
+
+@keyframes productScroll{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(-50%);
+    }
+
+}
+
+.slider-track:hover{
+    animation-play-state:paused;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .product-slide{
+        width:320px;
+        height:240px;
+    }
+
+    .slide-content h3{
+        font-size:22px;
+    }
+
+}
+
+</style>
+
   <!-- Why Choose Us Section -->
 
-  <section id="why-us" class="py-20 bg-red-700 text-white">
+  <section id="why-us" class="py-20 bg-purple-400 text-white">
 
     <div class="container mx-auto px-6">
 
@@ -399,7 +561,7 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
           Why Choose H.A. IMPEX?
         </h2>
 
-        <p class="max-w-4xl mx-auto text-lg leading-8 text-red-100">
+        <p class="max-w-4xl mx-auto text-lg leading-8 text-white-200">
           At H.A. IMPEX, we are committed to delivering premium-quality
           Indian spices to customers worldwide. Our focus on quality,
           reliability, and customer satisfaction has made us a trusted
@@ -465,7 +627,7 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
       <!-- Bottom Content -->
       <div class="mt-16 text-center max-w-5xl mx-auto">
 
-        <p class="text-lg leading-8 text-red-100">
+        <p class="text-lg leading-8 text-white-100">
           Located in Khari Baoli, Delhi—one of the world's largest spice
           trading hubs—H.A. IMPEX benefits from strong sourcing networks,
           competitive pricing, and transparent business practices. Under
@@ -481,42 +643,6 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
 
   </section>
 
-
-  <!-- Company Information -->
-  <section class="relative py-20 bg-cover bg-center" style="background-image: url('images/info.jpg');">
-    <div class="absolute inset-0 bg-white/70"></div>
-
-    <div class="relative z-10 container mx-auto px-6">
-      <h1 class="text-4xl font-bold text-center text-red mb-12">
-        Company Information
-      </h1>
-
-      <div class="grid md:grid-cols-2 gap-10">
-        <div class="bg-white p-8 rounded-xl shadow">
-          <p><strong>Company Name:</strong> H.A. IMPEX</p>
-          <p><strong>Year Established:</strong> 2026</p>
-          <p><strong>Business Type:</strong> Import & Export</p>
-          <p><strong>Employees:</strong> 15</p>
-          <p><strong>Proprietor:</strong> Mr. Hitesh Aggarwal</p>
-          <p><strong>Qualification:</strong> MBA in Business Management</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow">
-          <p><strong>Address:</strong></p>
-          <p>
-            49A, Coronation Building,<br />
-            Fatehpuri, Khari Baoli,<br />
-            Delhi - 110006, India
-          </p>
-
-          <br />
-
-          <p><strong>Markets Served:</strong> Worldwide</p>
-          <p><strong>Industry:</strong> Spices Exporter</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Contact -->
   <section id="contact" class="relative py-20 bg-cover bg-center" style="background-image: url('images/form.jpg');">
@@ -538,7 +664,7 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
           <textarea rows="5" name="message" placeholder="Your Message" required
             class="w-full border p-3 mb-4 rounded"></textarea>
 
-          <button type="submit" class="bg-red-700 text-white px-8 py-3 rounded hover:bg-red-800">
+          <button type="submit" class="bg-purple-700 text-white px-8 py-3 rounded hover:bg-purple-800">
             Send Inquiry
           </button>
         </form>
@@ -546,17 +672,16 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
     </div>
   </section>
 
+
   <!-- Footer -->
-  <!---->
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white border-t-4 border-red-600 pt-16 pb-8">
+  <footer class="bg-gray-900 text-white border-t-4 border-purple-600 pt-16 pb-8">
     <div class="container mx-auto px-6">
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
 
         <!-- Company Info -->
         <div>
-          <h3 class="text-2xl font-bold text-red-500 mb-4">
+          <h3 class="text-2xl font-bold text-purple-500 mb-4">
             H.A. IMPEX
           </h3>
 
@@ -574,10 +699,10 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
           </h4>
 
           <ul class="space-y-2 text-gray-400">
-            <li><a href="index.html" class="hover:text-red-500">Home</a></li>
-            <li><a href="about.html" class="hover:text-red-500">About Us</a></li>
-            <li><a href="products.html" class="hover:text-red-500">Products</a></li>
-            <li><a href="contact.html" class="hover:text-red-500">Contact Us</a></li>
+            <li><a href="index.html" class="hover:text-purple-500">Home</a></li>
+            <li><a href="about.html" class="hover:text-purple-500">About Us</a></li>
+            <li><a href="products.html" class="hover:text-purple-500">Products</a></li>
+            <li><a href="contact.html" class="hover:text-purple-500">Contact Us</a></li>
           </ul>
         </div>
 
@@ -611,7 +736,7 @@ transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl cursor-p
 
             <p>
               📧
-              <a href="mailto:hiteshaggarwal@haimpex.com" class="hover:text-red-500 transition">
+              <a href="mailto:hiteshaggarwal@haimpex.com" class="hover:text-purple-500 transition">
                 hiteshaggarwal@haimpex.com
               </a>
             </p>
