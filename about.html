@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H.A. IMPEX | About Us</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .hero-bg {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url("images/bg.webp") no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* =========================
+   ABOUT PAGE CSS
+========================= */
+
+        /* =========================
+   ABOUT PAGE PREMIUM THEME
+========================= */
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f8f5ff;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Section Spacing */
+
+        section {
+            padding: 70px 8%;
+        }
+
+        /* Section Headings */
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .section-title h2 {
+            font-size: 52px;
+            font-weight: 700;
+            color: #6d28d9;
+            margin-bottom: 20px;
+        }
+
+        .section-title p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Cards */
+
+        .card {
+            background: #7f4bda6e;
+            border-radius: 25px;
+            padding: 40px;
+            margin: 30px auto;
+            box-shadow: 0 10px 40px rgba(124, 58, 237, .08);
+            transition: .4s;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(124, 58, 237, .18);
+        }
+
+
+        /* Client Reviews */
+
+        .client-review-section {
+            position: relative;
+            padding: 120px 8%;
+            overflow: hidden;
+
+            background:
+                linear-gradient(rgba(203, 186, 228, 0.88),
+                    rgba(187, 182, 196, 0.644)),
+                url('abt-img/client.jpg');
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .review-title p {
+            color: rgb(58, 57, 57);
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+
+        .review-card {
+            background: white;
+            border-left: 5px solid #7c3aed;
+            padding: 35px;
+            border-radius: 20px;
+            transition: .4s;
+            box-shadow: 0 10px 30px rgba(124, 58, 237, .08);
+        }
+
+        .review-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .review-card p {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .review-card h4 {
+            margin-top: 20px;
+            color: #6d28d9;
+        }
+
+        /* Floating Icons */
+
+        .floating-icon {
+            position: absolute;
+            font-size: 40px;
+            opacity: .4;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .icon1 {
+            top: 12%;
+            left: 8%;
+        }
+
+        .icon2 {
+            top: 30%;
+            right: 10%;
+        }
+
+        .icon3 {
+            bottom: 15%;
+            left: 15%;
+        }
+
+        .icon4 {
+            bottom: 10%;
+            right: 15%;
+        }
+
+        @keyframes float {
+
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-25px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+
+        /* Connect Section */
+
+        .connect-section {
+            background:
+                linear-gradient(135deg,
+                    #6d28d9,
+                    #7c3aed,
+                    #a855f7);
+            color: white;
+            text-align: center;
+            border-radius: 40px;
+            padding: 80px;
+        }
+
+        .connect-section h2 {
+            font-size: 55px;
+            margin-bottom: 25px;
+        }
+
+        .connect-section p {
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.9;
+        }
+
+        .connect-btn {
+            display: inline-block;
+            margin-top: 35px;
+            background: white;
+            color: #6d28d9;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .4s;
+        }
+
+        .connect-btn:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Floating Animation */
+
+        .floating {
+            animation: floating 4s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+        /* Responsive */
+
+        @media(max-width:991px) {
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .connect-section {
+                padding: 50px 25px;
+            }
+
+            .section-title h2 {
+                font-size: 38px;
+            }
+
+            .about-content h2 {
+                font-size: 38px;
+            }
+
+            .connect-section h2 {
+                font-size: 40px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="font-sans">
+
+    <header
+        class=" bg-gradient-to-br from-purple-200 via-violet-100 to-purple-200 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center py-4">
+                <div>
+                    <div class="logo">
+                        🚢 H.A. <span>IMPEX</span>
+                        <p>GLOBAL SPICE EXPORTER</p>
+                    </div>
+
+                    <style>
+                        .logo {
+                            font-size: 38px;
+                            font-weight: 800;
+                            color: #111827;
+                        }
+
+                        .logo span {
+                            color: #8622dd;
+                        }
+
+                        .logo p {
+                            font-size: 10px;
+                            letter-spacing: 4px;
+                            color: #666;
+                            margin-top: 5px;
+                        }
+                    </style>
+                </div>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="home.html" class="hover:text-purple-700">Home</a>
+                    <a href="about.html" class="hover:text-purple-700">About</a>
+                    <a href="products.html" class="hover:text-purple-700">Products</a>
+                    <a href="why-us.html" class="hover:text-purple-700">Why Us</a>
+                    <a href="contact.html" class="hover:text-purple-700">Contact</a>
+                </nav>
+
+                <button id="menu-btn" class="md:hidden text-3xl">☰</button>
+            </div>
+
+            <div id="mobile-menu" class="hidden pb-4 md:hidden">
+                <a href="home.html" class="block py-2">Home</a>
+                <a href="about.html" class="block py-2">About</a>
+                <a href="products.html" class="block py-2">Products</a>
+                <a href="why-us.html" class="block py-2">Why Us</a>
+                <a href="contact.html" class="block py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT US PREMIUM SECTION -->
+    <section class="relative py-24 overflow-hidden bg-gradient-to-br from-purple-50 via-purple-100 to-purple-50">
+
+        <!-- Blur Effects -->
+        <div class="absolute top-10 left-10 w-72 h-72 bg-purple-300 rounded-full blur-[120px] opacity-30"></div>
+
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-violet-300 rounded-full blur-[120px] opacity-30"></div>
+
+        <!-- Decorative Icons -->
+        <div class="absolute top-24 left-16 text-6xl opacity-10">🌾</div>
+        <div class="absolute top-32 right-24 text-6xl opacity-10">🌶️</div>
+        <div class="absolute bottom-24 left-24 text-6xl opacity-10">🥜</div>
+        <div class="absolute bottom-32 right-16 text-6xl opacity-10">🍚</div>
+        <!-- Dots -->
+        <div class="dots dots-1"></div>
+        <div class="dots dots-2"></div>
+        <style>
+            /* Dotted Pattern */
+
+            .dots {
+                position: absolute;
+                width: 90px;
+                height: 90px;
+                background-image:
+                    radial-gradient(#c084fc 2px, transparent 2px);
+                background-size: 18px 18px;
+                opacity: .4;
+            }
+
+            .dots-1 {
+                top: 20px;
+                left: 20px;
+            }
+
+            .dots-2 {
+                bottom: 20px;
+                right: 20px;
+            }
+        </style>
+
+        <!-- Blur Circles -->
+        <div class="blur blur-1"></div>
+        <div class="blur blur-2"></div>
+        <style>
+            /* Purple Glow */
+
+            .blur {
+                position: absolute;
+                border-radius: 50%;
+                filter: blur(90px);
+                opacity: .35;
+            }
+
+            .blur-1 {
+                width: 250px;
+                height: 250px;
+                background: rgb(78, 77, 77);
+                top: -50px;
+                left: 200px;
+            }
+
+            .blur-2 {
+                width: 350px;
+                height: 350px;
+                background: #aaa3ca;
+                right: -100px;
+                top: 0;
+            }
+        </style>
+
+        <div class="container mx-auto px-6 relative z-10">
+
+            <!-- Heading -->
+
+            <div class="text-center mb-20">
+
+                <h2 class="text-5xl md:text-6xl font-bold text-purple-800 mb-6">
+                    About H.A. IMPEX
+                </h2>
+
+                <p class="max-w-4xl mx-auto text-gray-600 text-lg leading-8">
+                    H.A. IMPEX is a trusted Import-Export company based in Delhi, India,
+                    committed to supplying premium-quality Dry Fruits, Pulses, Rice,
+                    and Indian Spices to customers worldwide.
+                </p>
+
+            </div>
+
+            <!-- Content -->
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Left Image -->
+
+                <div class="group">
+
+                    <img src="abt-img/abt01.jpg" alt="H.A. IMPEX"
+                        class="rounded-[35px] shadow-2xl transition duration-700 group-hover:scale-105">
+
+                </div>
+
+                <!-- Right Content -->
+
+                <div>
+
+                    <h3 class="text-5xl font-bold text-purple-800 mb-6">
+                        Trusted Global Export Partner
+                    </h3>
+
+                    <p>
+                        H.A. IMPEX is a trusted Import-Export company based in Delhi, India, dedicated to supplying
+                        premium-quality Dry Fruits, Pulses, Rice, and Indian Spices to customers across international
+                        markets. Established in 2026, the company was founded with a vision to bridge the gap between
+                        quality agricultural products and global buyers seeking reliable sourcing partners.
+                        <br>
+                        <b>Located in the heart of Khari Baoli,</b> one of largest spice trading markets, H.A. IMPEX
+                        benefits from strong supplier networks, extensive market knowledge, and direct access to
+                        high-quality products. Our company works closely with trusted farmers, processors, and
+                        manufacturers to ensure that every product meets international quality and safety standards.
+                    </p>
+                    <br>
+                    <p>
+                        Our focus extends beyond simply supplying products. We strive to build long-term relationships
+                        based on trust, consistency, and customer satisfaction. Every order is handled with
+                        professionalism and attention to detail, ensuring timely delivery and complete peace of mind for
+                        our clients.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Feature Cards -->
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-xl text-center hover:-translate-y-3 transition duration-300">
+
+                    <div class="text-5xl mb-4">🌿</div>
+
+                    <h4 class="font-bold text-purple-800 text-xl mb-3">
+                        Premium Quality
+                    </h4>
+
+                    <p class="text-gray-600">
+                        Carefully sourced and quality tested products.
+                    </p>
+
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-xl text-center hover:-translate-y-3 transition duration-300">
+
+                    <div class="text-5xl mb-4">🛡️</div>
+
+                    <h4 class="font-bold text-purple-800 text-xl mb-3">
+                        International Standards
+                    </h4>
+
+                    <p class="text-gray-600">
+                        Export-ready products meeting global requirements.
+                    </p>
+
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-xl text-center hover:-translate-y-3 transition duration-300">
+
+                    <div class="text-5xl mb-4">🚚</div>
+
+                    <h4 class="font-bold text-purple-800 text-xl mb-3">
+                        Timely Delivery
+                    </h4>
+
+                    <p class="text-gray-600">
+                        Efficient logistics and secure global shipping.
+                    </p>
+
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-xl text-center hover:-translate-y-3 transition duration-300">
+
+                    <div class="text-5xl mb-4">👥</div>
+
+                    <h4 class="font-bold text-purple-800 text-xl mb-3">
+                        Customer Satisfaction
+                    </h4>
+
+                    <p class="text-gray-600">
+                        Dedicated support and long-term business relationships.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHO WE ARE -->
+    <section>
+
+        <div class="section-title">
+            <h2>Who We Are</h2>
+        </div>
+
+        <div class="card">
+
+            <p>
+                Under the leadership of Mr. Hitesh Aggarwal, H.A. IMPEX continues
+                to grow as a trusted name in the international trade industry.
+                Our experienced team works closely with suppliers and customers
+                to ensure smooth business operations and exceptional product quality.
+            </p>
+
+            <br>
+
+            <p>
+                We focus on building long-term business relationships based on
+                trust, transparency, and mutual success. Our commitment to quality,
+                competitive pricing, and timely deliveries has earned the confidence
+                of customers across global markets.
+            </p>
+
+        </div>
+        <div class="card">
+
+            <p>
+                <b>A Reliable Global Trading Partner</b>
+
+                At H.A. IMPEX, we believe that quality is the foundation of successful business relationships. Our
+                experienced team works diligently to source, inspect, process, and deliver products that exceed customer
+                expectations.
+            </p>
+
+            <br>
+
+            <p>
+                We specialize in:
+                <br>
+
+                ✔ Premium Indian Spices
+
+                ✔ High-Quality Dry Fruits
+
+                ✔ Export Grade Pulses
+
+                ✔ Basmati & Non-Basmati Rice
+
+                ✔ Customized Packaging Solutions
+
+                ✔ Global Supply Chain Support
+                <br>
+
+                Our commitment to quality, integrity, and reliability has enabled us to build a strong reputation among
+                clients seeking consistent product quality and dependable export services.
+            </p>
+
+        </div>
+
+
+    </section>
+
+    <!-- CLIENT REVIEWS -->
+    <section class="client-review-section">
+        <!-- Floating Icons -->
+        <div class="floating-icon icon1">⭐</div>
+        <div class="floating-icon icon2">💬</div>
+        <div class="floating-icon icon3">⭐</div>
+        <div class="floating-icon icon4">💜</div>
+
+
+        <div class="section-title review-title">
+            <h2>Client Reviews</h2>
+            <p>
+                What our valued customers say about us.
+            </p>
+        </div>
+
+        <div class="review-grid">
+
+            <div class="review-card">
+                <p>
+                    "H.A. IMPEX consistently delivers excellent quality products.
+                    Their professionalism and commitment to customer satisfaction
+                    make them one of our most trusted suppliers."
+                </p>
+
+                <h4>— International Food Distributor</h4>
+            </div>
+
+            <div class="review-card">
+                <p>
+                    "The quality of rice and pulses supplied by H.A. IMPEX has
+                    always exceeded our expectations. Their team is highly responsive."
+                </p>
+
+                <h4>— Global Import Partner</h4>
+            </div>
+
+            <div class="review-card">
+                <p>
+                    "Reliable deliveries, competitive pricing, and premium product
+                    quality. We highly recommend H.A. IMPEX."
+                </p>
+
+                <h4>— Wholesale Buyer</h4>
+            </div>
+
+            <div class="review-card">
+                <p>
+                    "Working with H.A. IMPEX has been a smooth and professional
+                    experience from inquiry to final delivery."
+                </p>
+
+                <h4>— International Trading Company</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONNECT WITH US -->
+    <section class="about-bg">
+
+        <div class="connect-section">
+
+            <h2>Connect With Us</h2>
+
+            <p>
+                Whether you are looking for premium Dry Fruits, Pulses, Rice,
+                or Indian Spices, H.A. IMPEX is ready to become your trusted
+                sourcing and export partner. Our team is committed to providing
+                exceptional service, competitive pricing, and reliable delivery
+                solutions tailored to your business needs.
+            </p>
+
+            <a href="contact.html" class="connect-btn">
+                Contact Us Today
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer
+        class="bg-gradient-to-br from-purple-300 via-violet-100 to-purple-200 text-purple-500  border-t-4 border-purple-600 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-2xl font-bold text-purple-500 mb-4">
+                        H.A. IMPEX
+                    </h3>
+
+                    <p class="text-gray-900 leading-7">
+                        Trusted exporter and importer of premium Indian spices,
+                        delivering quality, freshness, and authentic flavors to
+                        global markets.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">
+                        Quick Links
+                    </h4>
+
+                    <ul class="space-y-2 text-gray-900">
+                        <li><a href="index.html" class="hover:text-purple-500">Home</a></li>
+                        <li><a href="about.html" class="hover:text-purple-500">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-purple-500">Products</a></li>
+                        <li><a href="contact.html" class="hover:text-purple-500">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">
+                        Our Products
+                    </h4>
+
+                    <ul class="space-y-2 text-gray-900">
+                        <li>Whole Spices</li>
+                        <li>Ground Spices</li>
+                        <li>Crushed Spices</li>
+                        <li>Spice Blends</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">
+                        Contact Info
+                    </h4>
+
+                    <div class="space-y-3 text-gray-900">
+
+                        <p>
+                            📍 49A, Coronation Building,<br>
+                            Fatehpuri, Khari Baoli,<br>
+                            Delhi - 110006, India
+                        </p>
+
+                        <p>
+                            📧
+                            <a href="mailto:hiteshaggarwal@haimpex.com" class="hover:text-purple-500 transition">
+                                hiteshaggarwal@haimpex.com
+                            </a>
+                        </p>
+
+                        <p>
+                            🌍 Worldwide Export Services
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+
+            <div class="border-t border-gray-700 mt-10 pt-6">
+
+                <div class="flex flex-col md:flex-row justify-between items-center">
+
+                    <p class="text-gray-900 text-center md:text-left">
+                        © 2026 H.A. IMPEX. All Rights Reserved.
+                    </p>
+
+                    <p class="text-gray-900 mt-3 md:mt-0">
+                        Premium Indian Spices • Global Export Solutions
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+     <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>

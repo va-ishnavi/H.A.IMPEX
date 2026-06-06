@@ -1,0 +1,1049 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H.A. IMPEX | Products</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .hero-bg {
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("images/bg.webp") no-repeat center center fixed;
+      background-size: cover;
+      background-position: center;
+    }
+
+   
+.products-section{
+    padding:100px 8%;
+    background:#F8F5FF;
+}
+
+.category-title{
+    font-size:42px;
+    color:#6D28D9;
+    text-align:center;
+    margin-bottom:50px;
+    font-weight:700;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-bottom:100px;
+}
+
+.flip-card{
+    background:transparent;
+    height:380px;
+    perspective:1000px;
+}
+
+.flip-card-inner{
+    position:relative;
+    width:100%;
+    height:100%;
+    transition:transform .8s;
+    transform-style:preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform:rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.flip-card-front img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.flip-card-front h3{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:rgba(109,40,217,.9);
+    color:#fff;
+    padding:18px;
+    text-align:center;
+}
+
+.flip-card-back{
+    background:linear-gradient(135deg,#6D28D9,#A855F7);
+    color:#fff;
+    transform:rotateY(180deg);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    text-align:center;
+}
+
+.flip-card-back h3{
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.flip-card-back p{
+    line-height:1.8;
+}
+.group:hover{
+    box-shadow:0 25px 50px rgba(124,58,237,.25);
+}
+
+  </style>
+
+</head>
+
+<body class="font-sans">
+  <!-- Header -->
+  <header class=" bg-gradient-to-br from-purple-200 via-violet-100 to-purple-200 backdrop-blur-md shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6">
+      <div class="flex justify-between items-center py-4">
+        <div>
+          <div class="logo">
+            🚢 H.A. <span>IMPEX</span>
+            <p>GLOBAL SPICE EXPORTER</p>
+          </div>
+
+          <style>
+            .logo {
+              font-size: 38px;
+              font-weight: 800;
+              color: #111827;
+            }
+
+            .logo span {
+              color: #8622dd;
+            }
+
+            .logo p {
+              font-size: 10px;
+              letter-spacing: 4px;
+              color: #666;
+              margin-top: 5px;
+            }
+          </style>
+        </div>
+
+        <nav class="hidden md:flex space-x-8">
+          <a href="home.html" class="hover:text-purple-700">Home</a>
+          <a href="about.html" class="hover:text-purple-700">About</a>
+          <a href="products.html" class="hover:text-purple-700">Products</a>
+          <a href="why-us.html" class="hover:text-purple-700">Why Us</a>
+          <a href="contact.html" class="hover:text-purple-700">Contact</a>
+        </nav>
+
+        <button id="menu-btn" class="md:hidden text-3xl">☰</button>
+      </div>
+
+      <div id="mobile-menu" class="hidden pb-4 md:hidden">
+        <a href="home.html" class="block py-2">Home</a>
+        <a href="about.html" class="block py-2">About</a>
+        <a href="products.html" class="block py-2">Products</a>
+        <a href="why-us.html" class="block py-2">Why Us</a>
+        <a href="contact.html" class="block py-2">Contact</a>
+      </div>
+    </div>
+  </header>
+
+ <!--Products section-->
+ <section class="relative h-[80vh] flex items-center justify-center text-center overflow-hidden ">
+
+    <img src="pdt-img/products.jpg"
+        class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute inset-0   backdrop-blur"></div>
+
+    <div class="relative z-10 px-6">
+
+        <h1 class="text-6xl font-bold text-white mb-5">
+            Premium Agricultural Products
+        </h1>
+
+        <p class="text-xl text-purple-100 max-w-3xl mx-auto">
+            Exporting Premium Quality Dry Fruits, Pulses and Rice
+            to International Markets with Excellence.
+        </p>
+
+    </div>
+
+</section>
+
+<!--Product Categories-->
+<section class="py-24 bg-purple-200">
+
+    <div class="container mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+            <h2 class="text-5xl font-bold text-purple-900">
+                Our Product Categories
+            </h2>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Dry Fruits -->
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <div class="overflow-hidden">
+                    <img src="pdt-img/dry fruits.jpg"
+                        class="h-80 w-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+
+                <div class="p-8">
+
+                    <h3 class="text-3xl font-bold text-purple-800 mb-4">
+                        Dry Fruits
+                    </h3>
+
+                    <p class="text-gray-600 leading-7">
+                        Premium Almonds, Cashews, Raisins,
+                        Walnuts and Pistachios sourced from
+                        trusted suppliers.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Pulses -->
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <div class="overflow-hidden">
+                    <img src="pdt-img/pulses.jpg"
+                        class="h-80 w-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+
+                <div class="p-8">
+
+                    <h3 class="text-3xl font-bold text-purple-800 mb-4">
+                        Pulses
+                    </h3>
+
+                    <p class="text-gray-600 leading-7">
+                        High-quality Lentils, Chickpeas,
+                        Green Gram and Black Gram for
+                        global markets.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Rice -->
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <div class="overflow-hidden">
+                    <img src="images/rice.jpg"
+                        class="h-80 w-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+
+                <div class="p-8">
+
+                    <h3 class="text-3xl font-bold text-purple-800 mb-4">
+                        Rice
+                    </h3>
+
+                    <p class="text-gray-600 leading-7">
+                        Premium Basmati and Non-Basmati Rice
+                        varieties known for aroma and quality.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!--Spices-->
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <div class="overflow-hidden">
+                    <img src="pdt-img/spices.jpg"
+                        class="h-80 w-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+
+                <div class="p-8">
+
+                    <h3 class="text-3xl font-bold text-purple-800 mb-4">
+                       Spices
+                    </h3>
+
+                    <p class="text-gray-600 leading-7">
+                         Explore our premium collection of spices sourced from
+                trusted farms across India, ensuring exceptional aroma,
+                flavor, purity, and freshness.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="products-section">
+
+<h2 class="category-title">
+Whole , Ground  & Crushed Spices
+</h2>
+
+<div class="product-grid">
+
+<div class="flip-card">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+<img src="pdt-img/Cumin Seeds.jpg">
+<h3>Cumin Seeds</h3>
+</div>
+
+<div class="flip-card-back">
+<h3>Cumin Seeds</h3>
+<p>
+Premium export quality cumin seeds with strong aroma,
+natural flavor and superior purity.<br>
+Key Features<br>
+
+✅ Premium Export Quality<br>
+✅ Strong Natural Aroma<br>
+✅ High Purity & Freshness<br>
+✅ Hygienically Processed<br>
+✅ Rich in Essential Oils
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+<img src="pdt-img/corinder.jpg">
+<h3>Coriander Seeds</h3>
+</div>
+
+<div class="flip-card-back">
+<h3>Coriander Seeds</h3>
+<p>
+Carefully sourced coriander seeds known for freshness,
+aroma and culinary applications.<br>
+Key Features<br>
+
+✅ Premium Export Quality<br>
+✅ Natural Aroma & Flavor<br>
+✅ Uniform Size & Color<br>
+✅ Hygienically Processed<br>
+✅ Rich in Essential Oils
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+<img src="pdt-img/fennel.jpg">
+<h3>Fennel Seeds</h3>
+</div>
+
+<div class="flip-card-back">
+<h3>Fennel Seeds</h3>
+<p>
+Naturally sweet and aromatic fennel seeds processed
+for international markets.<br>
+Key Features<br>
+
+✅ Premium Export Quality<br>
+
+✅ Naturally Sweet Aroma<br>
+
+✅ Rich in Essential Oils<br>
+
+✅ High Purity & Freshness<br>
+
+✅ Uniform Size & Natural Color
+</p>
+</div>
+
+</div>
+</div>
+
+<!--ground spices-->
+<div class="flip-card">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+<img src="pdt-img/turmeric powder.jpg">
+<h3>Turmeric Powder</h3>
+</div>
+
+<div class="flip-card-back">
+<h3>Turmeric Powder</h3>
+<p>
+Premium turmeric powder with rich color,
+high curcumin content and purity.<br>
+Key Features<br>
+
+✅ Premium Export Quality<br>
+
+✅ Rich Natural Yellow Color<br>
+
+✅ High Curcumin Content<br>
+
+✅ Strong Aroma & Freshness<br>
+
+✅ Finely Ground Texture<br>
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+<img src="pdt-img/red-chilli-powder.jpg">
+<h3>Red Chilli Powder</h3>
+</div>
+
+<div class="flip-card-back">
+<h3>Red Chilli Powder</h3>
+<p>
+Finely processed chilli powder delivering
+vibrant color and authentic taste.<br>
+Key Features<br>
+
+✅ Premium Export Quality<br>
+
+✅ Vibrant Natural Red Color<br>
+
+✅ Rich & Strong Flavor<br>
+
+✅ Finely Ground Texture<br>
+
+✅ High Purity Standards<br>
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+<img src="pdt-img/corinder powder.jpg">
+<h3>Coriander Powder</h3>
+</div>
+
+<div class="flip-card-back">
+<h3>Coriander Powder</h3>
+<p>
+Freshly ground coriander powder retaining
+natural oils and flavor.<br>
+Key Features<br>
+
+✅ Premium Export Quality<br>
+
+✅ Vibrant Natural Red Color<br>
+
+✅ Rich & Strong Flavor<br>
+
+✅ Finely Ground Texture<br>
+
+✅ High Purity Standards<br>
+</p>
+</div>
+
+</div>
+</div>
+
+<!--crushed spices-->
+<div class="flip-card">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+<img src="pdt-img/Crushed Chilli.jpg">
+<h3>Crushed Chilli</h3>
+</div>
+
+<div class="flip-card-back">
+<h3>Crushed Chilli</h3>
+<p>
+Freshly ground coriander powder retaining
+natural oils and flavor.<br>
+Key Features<br>
+
+✅ Premium Export Quality<br>
+
+✅ Rich Red Color<br>
+
+✅ Strong & Spicy Flavor<br>
+
+✅ Natural Aroma & Freshness<br>
+
+✅ Uniform Flake Size
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+<img src="pdt-img/crushed black pepper.jpg">
+<h3>Crushed Black Pepper</h3>
+</div>
+
+<div class="flip-card-back">
+<h3>Crushed Black Pepper</h3>
+<p>
+Freshly ground coriander powder retaining
+natural oils and flavor.<br>
+Key Features<br>
+
+✅ Premium Export Quality<br>
+
+✅ Strong Natural Aroma<br>
+
+✅ Bold & Pungent Flavor<br>
+
+✅ Coarse Uniform Texture<br>
+
+✅ Rich Essential Oil Content
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+<img src="pdt-img/crushed cumin.jpg">
+<h3>Crushed Cumin</h3>
+</div>
+
+<div class="flip-card-back">
+<h3>Crushed Cumin</h3>
+<p>
+Freshly ground coriander powder retaining
+natural oils and flavor.<br>
+Key Features<br>
+
+✅ Premium Export Quality<br>
+
+✅ Rich Natural Aroma<br>
+
+✅ Warm & Distinctive Flavor<br>
+
+✅ Coarse Uniform Texture<br>
+</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!--Pulese -->
+<!-- PULSES SECTION -->
+
+<section class="py-24 bg-gradient-to-br from-purple-50 to-purple-100">
+
+    <div class="container mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+            <span class="bg-purple-200 text-purple-700 px-6 py-2 rounded-full font-semibold">
+                PREMIUM PULSES
+            </span>
+
+            <h2 class="text-5xl font-bold text-purple-900 mt-6 mb-6">
+                Pulses Collection
+            </h2>
+
+            <p class="max-w-4xl mx-auto text-gray-600 leading-8">
+                We offer a premium range of pulses sourced from trusted farms,
+                carefully cleaned, sorted, and packed to meet international
+                quality standards.
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card -->
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <div class="overflow-hidden">
+                    <img src="pdt-img/Chickpeas.jpg"
+                        class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+                </div>
+
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">
+                        Chickpeas
+                    </h3>
+
+                    <p class="text-gray-600 leading-7">
+                        Premium export-quality chickpeas known for superior
+                        size, nutritional value, and long shelf life.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+                <div class="overflow-hidden">
+                    <img src="pdt-img/Moong Dal.jpg"
+                        class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+                </div>
+
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">
+                        Moong Dal
+                    </h3>
+
+                    <p class="text-gray-600 leading-7">
+                        Nutritious and easy-to-digest lentils widely used in
+                        households and food processing industries.
+                    </p>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+                <div class="overflow-hidden">
+                    <img src="pdt-img/Masoor Dal.jpg"
+                        class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+                </div>
+
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">
+                        Masoor Dal
+                    </h3>
+
+                    <p class="text-gray-600 leading-7">
+                        High-quality red lentils offering rich flavor,
+                        protein content, and excellent cooking properties.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DRY FRUITS SECTION -->
+
+<section class="py-24 bg-white">
+
+    <div class="container mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+            <span class="bg-purple-200 text-purple-700 px-6 py-2 rounded-full font-semibold">
+                PREMIUM DRY FRUITS
+            </span>
+
+            <h2 class="text-5xl font-bold text-purple-900 mt-6 mb-6">
+                Dry Fruits Collection
+            </h2>
+
+            <p class="max-w-4xl mx-auto text-gray-600 leading-8">
+                Carefully selected dry fruits packed with nutrition,
+                freshness, and exceptional taste for global markets.
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div class="group bg-purple-50 rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <img src="images/almonds.jpg"
+                    class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
+
+                <div class="p-6">
+
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">
+                        Almonds
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Rich in nutrients and carefully sourced to ensure
+                        premium quality and freshness.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="group bg-purple-50 rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <img src="pdt-img/Cashews.jpg"
+                    class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
+
+                <div class="p-6">
+
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">
+                        Cashews
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Premium-grade cashews known for creamy texture
+                        and superior taste.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="group bg-purple-50 rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <img src="pdt-img/Raisins.jpg"
+                    class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
+
+                <div class="p-6">
+
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">
+                        Raisins
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Naturally sweet and nutritious raisins
+                        processed under strict quality standards.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="group bg-purple-50 rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <img src="images/walnuts.jpg"
+                    class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
+
+                <div class="p-6">
+
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">
+                        Walnuts
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Premium walnuts offering rich flavor,
+                        freshness, and nutritional benefits.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RICE SECTION -->
+
+<section class="py-24 bg-gradient-to-br from-purple-50 to-purple-100">
+
+    <div class="container mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+            <span class="bg-purple-200 text-purple-700 px-6 py-2 rounded-full font-semibold">
+                PREMIUM RICE
+            </span>
+
+            <h2 class="text-5xl font-bold text-purple-900 mt-6 mb-6">
+                Rice Collection
+            </h2>
+
+            <p class="max-w-4xl mx-auto text-gray-600 leading-8">
+                We supply premium Basmati and Non-Basmati rice varieties
+                known for exceptional aroma, purity, texture, and quality.
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <img src="pdt-img/1121 Basmati Rice.jpg"
+                    class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+
+                <div class="p-8">
+
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">
+                        1121 Basmati Rice
+                    </h3>
+
+                    <p class="text-gray-600 leading-7">
+                        Premium long-grain rice with exceptional aroma,
+                        texture, and cooking quality.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <img src="pdt-img/1509 Basmati Rice.jpg"
+                    class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+
+                <div class="p-8">
+
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">
+                        1509 Basmati Rice
+                    </h3>
+
+                    <p class="text-gray-600 leading-7">
+                        High-quality rice variety widely preferred
+                        in international markets.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-4 transition duration-500">
+
+                <img src="pdt-img/Sugandha Rice.jpg"
+                    class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
+
+                <div class="p-8">
+
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">
+                        Sugandha Rice
+                    </h3>
+
+                    <p class="text-gray-600 leading-7">
+                        Aromatic rice variety offering excellent
+                        quality and value for bulk buyers.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- OUR PRODUCT PORTFOLIO -->
+<section class="relative py-24 overflow-hidden bg-gradient-to-br from-purple-50 via-purple-100 to-purple-50">
+
+    <!-- Blur Effects -->
+    <div class="absolute top-0 left-20 w-72 h-72 bg-purple-300 rounded-full blur-[120px] opacity-30"></div>
+
+    <div class="absolute bottom-0 right-20 w-80 h-80 bg-violet-300 rounded-full blur-[120px] opacity-30"></div>
+
+    <!-- Decorative Elements -->
+    <div class="absolute top-16 left-10 text-5xl opacity-10">🌾</div>
+    <div class="absolute top-24 right-20 text-5xl opacity-10">🌶️</div>
+    <div class="absolute bottom-20 left-24 text-5xl opacity-10">🥜</div>
+    <div class="absolute bottom-24 right-16 text-5xl opacity-10">🍚</div>
+
+    <div class="container mx-auto px-6 relative z-10">
+
+        <div class="max-w-5xl mx-auto text-center">
+
+            <h2 class="text-5xl md:text-6xl font-bold text-purple-900 mb-6">
+                Product Portfolio
+            </h2>
+
+            <div class="w-32 h-1.5 bg-purple-600 mx-auto rounded-full mb-8"></div>
+
+            <p class="text-lg md:text-xl text-gray-600 leading-9 max-w-4xl mx-auto">
+                Explore our extensive range of premium-quality agricultural products,
+                including Whole Spices, Ground Spices, Crushed Spices, Pulses,
+                Dry Fruits, and Rice. Carefully sourced from trusted suppliers and
+                processed according to international quality standards, our products
+                are trusted by importers, wholesalers, distributors, and food industries
+                across global markets.
+            </p>
+
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
+
+            <div class="bg-white rounded-3xl shadow-xl p-8 text-center hover:-translate-y-3 transition duration-500">
+                <h3 class="text-4xl font-bold text-purple-700">50+</h3>
+                <p class="text-gray-600 mt-2">Products</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl p-8 text-center hover:-translate-y-3 transition duration-500">
+                <h3 class="text-4xl font-bold text-purple-700">6</h3>
+                <p class="text-gray-600 mt-2">Main Categories</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl p-8 text-center hover:-translate-y-3 transition duration-500">
+                <h3 class="text-4xl font-bold text-purple-700">100%</h3>
+                <p class="text-gray-600 mt-2">Quality Assured</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl p-8 text-center hover:-translate-y-3 transition duration-500">
+                <h3 class="text-4xl font-bold text-purple-700">Global</h3>
+                <p class="text-gray-600 mt-2">Export Reach</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+   <!-- Footer -->
+  <footer class="bg-gradient-to-br from-purple-300 via-violet-100 to-purple-200 text-purple-500  border-t-4 border-purple-600 pt-16 pb-8">
+    <div class="container mx-auto px-6">
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-2xl font-bold text-purple-500 mb-4">
+            H.A. IMPEX
+          </h3>
+
+          <p class="text-gray-900 leading-7">
+            Trusted exporter and importer of premium Indian spices,
+            delivering quality, freshness, and authentic flavors to
+            global markets.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">
+            Quick Links
+          </h4>
+
+          <ul class="space-y-2 text-gray-900">
+            <li><a href="index.html" class="hover:text-purple-500">Home</a></li>
+            <li><a href="about.html" class="hover:text-purple-500">About Us</a></li>
+            <li><a href="products.html" class="hover:text-purple-500">Products</a></li>
+            <li><a href="contact.html" class="hover:text-purple-500">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">
+            Our Products
+          </h4>
+
+          <ul class="space-y-2 text-gray-900">
+            <li>Whole Spices</li>
+            <li>Ground Spices</li>
+            <li>Crushed Spices</li>
+            <li>Spice Blends</li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">
+            Contact Info
+          </h4>
+
+          <div class="space-y-3 text-gray-900">
+
+            <p>
+              📍 49A, Coronation Building,<br>
+              Fatehpuri, Khari Baoli,<br>
+              Delhi - 110006, India
+            </p>
+
+            <p>
+              📧
+              <a href="mailto:hiteshaggarwal@haimpex.com" class="hover:text-purple-500 transition">
+                hiteshaggarwal@haimpex.com
+              </a>
+            </p>
+
+            <p>
+              🌍 Worldwide Export Services
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer -->
+
+      <div class="border-t border-gray-700 mt-10 pt-6">
+
+        <div class="flex flex-col md:flex-row justify-between items-center">
+
+          <p class="text-gray-900 text-center md:text-left">
+            © 2026 H.A. IMPEX. All Rights Reserved.
+          </p>
+
+          <p class="text-gray-900 mt-3 md:mt-0">
+            Premium Indian Spices • Global Export Solutions
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
